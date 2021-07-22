@@ -131,6 +131,7 @@ class SiteController extends Controller
     {
         $product = new Product;
         if($product->load(Yii::$app->request->post())) {
+
             $product->save();
             return $this->render('product-confirm', ['product' => $product]);
         } else {

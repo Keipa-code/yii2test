@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+$this->title = 'Product';
 ?>
 
 <?php $form = ActiveForm::begin(); ?>
