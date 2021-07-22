@@ -17,7 +17,7 @@ class Product extends ActiveRecord
     {
         return [
             [['product_name', 'sku', 'quantity'], 'required'],
-            [['product_name', 'sku', 'product_type',], 'string', 'max' => 25],
+            [['product_name', 'sku', 'product_type',], 'string'],
             [['image_url'], 'string', 'max' => 255],
             [['quantity'], 'integer',],
         ];
